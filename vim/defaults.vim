@@ -39,16 +39,8 @@ set statusline+=\ %#DiffDelete#\|\ %{&encoding}\ \|%#Normal#
 set statusline+=\ %#DiffDelete#\|\ %{TabStyle()}:\ %{&shiftwidth}\ \|%#Normal#
 set statusline+=\ %#DiffDelete#\|\ %Y\ \|%#Normal#
 
-if finddir(".git") != ""
-  set statusline+=\ %#DiffDelete#\|\ %{GitHead()}\ \|%#Normal#
-endif
-
 function! TabStyle()
   return &expandtab == 1 ? "Spaces" : "Tabs"
-endfunction
-
-function! GitHead()
-  return system("git rev-parse --abbrev-ref HEAD 2> /dev/null | tr -d '\n'")
 endfunction
 
 " File formatting and editing

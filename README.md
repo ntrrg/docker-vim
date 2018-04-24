@@ -13,7 +13,7 @@ enabled/used:
 
 * [Peaksea][] color scheme (great support for dark and light backgrounds).
 
-* Simple status line (with Git integration).
+* Simple status line.
 
 [Peaksea]: https://www.vim.org/download.php
 
@@ -63,6 +63,8 @@ Working on this project I use/used:
 * [Docker](https://docker.com)
 
 * [Github](https://github.com)
+
+* [Termux](https://termux.com)
 
 **Vim Team.** *download: vim online.* https://www.vim.org/download.php
 
