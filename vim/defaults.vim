@@ -16,7 +16,6 @@ set mouse=a
 set nomodeline
 set wildmenu
 set wrap
-set showcmd
 
 if ! has("gui_running") 
   set t_Co=256 
