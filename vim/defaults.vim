@@ -47,7 +47,7 @@ endfunction
 " File formatting and editing
 syntax on
 
-set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+set listchars=precedes:…,tab:››,space:·,trail:·,extends:…,eol:¶
 set autoindent
 set smarttab
 set expandtab tabstop=2 shiftwidth=2
