@@ -7,7 +7,7 @@ A small and simple dockerized Vim.
 If this image is used without any modification, the following features are
 enabled/used:
 
-* Host clipboard access.
+* Host clipboard access (WIP).
 
 * Soft tabs of 2 spaces by default (but some file types are adjusted).
 
@@ -16,6 +16,11 @@ enabled/used:
 * Simple status line.
 
 [Peaksea]: https://www.vim.org/download.php
+
+<p align="center">
+  <img width="45%" src="screenshots/dark.png"/>
+  <img width="45%" src="screenshots/light.png"/>
+</p>
 
 ## Usage
 
