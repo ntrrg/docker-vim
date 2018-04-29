@@ -9,7 +9,7 @@ set sessionoptions-=options
 set sessionoptions-=folds
 
 " Interface
-set number
+set nonumber
 set ruler
 set laststatus=2
 set mouse=a
