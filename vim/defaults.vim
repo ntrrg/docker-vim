@@ -18,11 +18,11 @@ set wildmenu
 set wrap
 set showcmd
 
-if ! has("gui_running") 
-  set t_Co=256 
-endif 
+if ! has("gui_running")
+  set t_Co=256
+endif
 
-set background=dark 
+set background=dark
 colors peaksea
 
 set statusline=
