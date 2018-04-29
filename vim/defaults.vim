@@ -15,7 +15,6 @@ set laststatus=2
 set mouse=a
 set nomodeline
 set wildmenu
-set wrap
 set showcmd
 
 if ! has("gui_running")
@@ -48,6 +47,7 @@ endfunction
 syntax on
 
 set listchars=precedes:…,tab:››,space:·,trail:·,extends:…,eol:¶
+set wrap
 set autoindent
 set smarttab
 set expandtab tabstop=2 shiftwidth=2
