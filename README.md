@@ -1,47 +1,25 @@
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ntrrg/docker-vim-builder/raw/master/LICENSE)
+[![Docker Build Status](https://img.shields.io/docker/build/ntrrg/vim.svg)](https://store.docker.com/community/images/ntrrg/vim/)
+[![](https://images.microbadger.com/badges/image/ntrrg/vim.svg)](https://microbadger.com/images/ntrrg/vim)
 
 A small and simple dockerized Vim.
 
 ## Features
 
-If this image is used without any modification, the following features are
-enabled/used:
-
 * Host clipboard access (WIP).
 
-* Soft tabs of 2 spaces by default (but some file types are adjusted).
-
-* [Peaksea][] color scheme (great support for dark and light backgrounds).
-
-* Simple status line.
-
-[Peaksea]: https://www.vim.org/download.php
-
-<p align="center">
-  <img width="45%" src="screenshots/dark.png"/>
-  <img width="45%" src="screenshots/light.png"/>
-</p>
+* [My configuration](https://github.com/ntrrg/dotfiles/tree/master/vim)
 
 ## Usage
 
-```sh
-docker run --rm -it [-v /path/to/project:/mnt] ntrrg/vim
+```shell-session
+docker run --rm -it \
+  [-u $(id -u $USER)] \
+  [-v /path/to/project:/mnt] \
+  ntrrg/vim
 ```
 
+* `-u $(id -u $USER)`: Avoid ownership problems setting an arbitrary user ID.
 * `-v /path/to/project:/mnt`: Work directory.
-
-## Customize
-
-The Vim build stage may be customized, there are two variables in
-[build.sh](build.sh):
-
-* `MODS="yes|no"`: Enable/Disable modification, if `no` is given, just build and
-  use Vim as default. (default: `yes`)
-
-* `FLAGS="BUILD_FLAGS"`: Custom building flags. (default: `--with-features=huge`)
-
-Since all the build is controlled by this script, it is easy to add custom
-features like Python or Ruby support, or download and install any plugin.
 
 ## Acknowledgment
 
